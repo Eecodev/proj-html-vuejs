@@ -46,7 +46,7 @@
         list-style: none;
     }
     a{
-        color: $text-primary;
+        color: $bg-lightblack;
         text-decoration: none;
     }
 

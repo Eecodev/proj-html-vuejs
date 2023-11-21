@@ -14,13 +14,14 @@
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
     #hero{
         position: relative;
         height: 100vh;
         background-image: url('/public/img/jumbotron_1.PNG');
         background-size: cover;
         background-position: center;
-        color: #fff;
+        color: $bg-light;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -33,20 +34,21 @@
     .hero-content h1{
         font-size: 3rem;
         margin-bottom: 20px;
+        color: $bg-lightblack;
     }
     .btn{
         display: inline-block;
         padding: 10px 20px;
-        background-color: #fff;
-        color: #ff5500;
+        background-color: $bg-light;
+        color: $bg-red;
         text-decoration: none;
         border-radius: 5px;
-        border: 1px solid #ff5500;
+        border: 1px solid $bg-red;
         transition: background-color 0.3s ease;
     }
     .btn:hover{
-        background-color: #dd4400;
-        color:#fff
+        background-color: $bg-red;
+        color:$bg-light;
     }
 
 </style>
