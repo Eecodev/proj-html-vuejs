@@ -1,30 +1,26 @@
 <template>
 
-  <header>
-    <nav>
-      <img src="" alt="">
-      <ul>
-        <li></li>
-      </ul>
-    </nav>
-  </header>
+  <HeaderComp/>
+  
 
-  <div id="hero" class="center">
-
+  <div id="hero" class="center border">
+    hero
   </div>
 
-  <main>
+  <main class="border">
+    main
     <section id="partnership" class="container"></section>
     <section id="course" class="container"></section>
     <section id="event" class="container"></section>
     <section id="blog" class="container"></section>
   </main>
 
-  <div class="main-carousel">
-
+  <div class="main-carousel border">
+    carousel
   </div>
 
-  <footer>
+  <footer class="border">
+    footer
     <div id="top-foot"></div>
     <div id="mid-foot"></div>
     <div id="bottom-foot"></div>
@@ -33,10 +29,17 @@
 </template>
 
 <script>
+import HeaderComp from './components/HeaderComp.vue'
+import HeroComp from './components/HeroComp.vue'
+import MainComp from './components/MainComp.vue'
+import FooterComp from './components/FooterComp.vue'
   export default {
     name: 'App',
     components: {
-
+      HeaderComp,
+      HeroComp,
+      MainComp,
+      FooterComp
     },
     data(){
       return {
@@ -44,7 +47,7 @@
       }
     },
     methods: {
-      
+
     }
   }
 </script>

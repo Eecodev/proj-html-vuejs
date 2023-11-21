@@ -9,3 +9,16 @@ $fa-font-path: '../webfonts';
 
 @import 'bootstrap/scss/bootstrap';
 
+:root {
+	--color-bg-light: #ffffff;
+	--color-bg-light-1: 255, 255, 255;
+	--color-bg-light-gray: #eeeeee;
+	--color-bg-light-gray-1: #ebebeb;
+	--color-bg-lightblue: #528ff0;
+	--color-bg-red: #d74d52;
+	--color-bg-pink: 215, 77, 82;
+	--color-bg-pastel-red: 215, 77, 82;
+	--color-bg-darkblue: #23374b;
+	--color-bg-lightblack: #333333;
+    --color-text-primary: #000000;
+}
