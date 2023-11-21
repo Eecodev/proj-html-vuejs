@@ -17,12 +17,7 @@
     carousel
   </div>
 
-  <footer class="border">
-    footer
-    <div id="top-foot"></div>
-    <div id="mid-foot"></div>
-    <div id="bottom-foot"></div>
-  </footer>
+  <FooterComp/>
 
 </template>
 
