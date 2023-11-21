@@ -3,9 +3,7 @@
   <HeaderComp/>
   
 
-  <div id="hero" class="center border">
-    hero
-  </div>
+  <HeroComp/>
 
   <main class="border">
     main
