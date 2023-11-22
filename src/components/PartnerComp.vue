@@ -12,6 +12,13 @@
                     </div>
                 </div>
             </div>
+
+            <div class="d-flex justify-content-center mt-4">
+                <div class="d-flex align-items-center m-4" v-for="statistic in statistics" :key="statistic.id" :style="{ backgroundImage: 'ulr(' + statistic.img +')'}">
+                    <h2>{{ statistic.value }}</h2>
+                    <p>{{ statistic.label }}</p>
+                </div>
+            </div>
             
         </section>
     </main>
@@ -22,7 +29,7 @@
         name: 'PartnerComp',
         data(){
             return{
-                cardPartner:[
+                cardPartner: [
                     {
                         img: '/public/svg/svg-0.svg',
                         title: 'Online Coaching',
@@ -38,6 +45,26 @@
                         title: 'Life Programs',
                         text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industrys'
                     },
+                ],
+                statistics: [
+                    {
+                        id: 1,
+                        value: '6500 +',
+                        label: 'Students',
+                        img: '/public/img/counter-shape-1-1-1.png'
+                    },
+                    {
+                        id: 2,
+                        value: '200 +',
+                        label: 'Online Courses',
+                        img: '/public/img/counter-shape-2-1-1.png'
+                    },
+                    {
+                        id: 3,
+                        value: '100% +',
+                        label: 'Happy Clients',
+                        img: '/public/img/counter-shape-3-1-1.png'
+                    }
                 ]
             }
         }
