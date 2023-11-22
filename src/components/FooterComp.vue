@@ -2,21 +2,20 @@
 
     <footer>
         <!-- subscribe section -->
-        <div id="top-foot" class="container">
-            <div class="input-group mb-3">
-                <input type="text" class="form-control my-custom-width" placeholder="Subscribe to our newsletter">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary my-radius" type="button" id="button-addon2">Register</button>
-                </div>
+        <div id="top-foot" class="container d-flex justify-content-between align-items-center m-5 border">
+            <div class="form-group d-flex align-items-center border p-4">
+                <input type="email" v-model="email" class="form-control my-custom-width my-radius mr-2" placeholder="Subscribe to our newsletter">
+                <button @click="subscribe" class="btn btn-primary my-radius">Subscribe</button>
             </div>
-            <div>
-                <p><a href="#">Insights is Picwik</a> University's thought leadership publication for sharing knowlege on management, technology and innovation.</p>
-                <span><a href="#">Take me there</a></span>
-            </div>
+            <p class="mb-0 p-4">
+                <a href="#">Insights is Picwik</a>
+                University's thought leadership publication for sharing knowledge on management, technology, and innovation.
+                <span class="d-block"><a href="#">Take me there</a></span>
+            </p>
         </div>
 
         <!-- contact us section -->
-        <div id="mid-foot" class="container">
+        <div id="mid-foot" class="container d-flex justify-content-between align-content-center m-5">
             <ul v-for="list in footerExplore" :key="list.id"> 
                 <h3>{{ list.title }} </h3>
                 <li v-for="item in list.items" :key="item.id">{{ item.content }}</li>
@@ -120,7 +119,7 @@
 
 <style lang="scss" scoped>
     .my-custom-width{
-        max-width: 25%;
+        width: 250px;
     }
     .my-radius{
         border-radius: 0;
