@@ -1,12 +1,16 @@
 <template>
-    <div>
-
-    </div>
+    <main>
+        <PartnerComp/>
+    </main>
 </template>
 
 <script>
+import PartnerComp from './PartnerComp.vue';
     export default {
-        name: 'MainComp'
+        name: 'MainComp',
+        components:{
+            PartnerComp,
+        }
     }
 </script>
 

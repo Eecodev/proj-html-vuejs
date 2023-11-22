@@ -1,17 +1,9 @@
 <template>
 
-  <HeaderComp/>
-  
+  <HeaderComp />
+  <HeroComp />
 
-  <HeroComp/>
-
-  <main class="border">
-    main
-    <section id="partnership" class="container"></section>
-    <section id="course" class="container"></section>
-    <section id="event" class="container"></section>
-    <section id="blog" class="container"></section>
-  </main>
+  <MainComp/>
 
   <div class="main-carousel border">
     carousel
