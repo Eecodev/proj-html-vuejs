@@ -3,10 +3,10 @@
     <footer>
         <!-- subscribe section -->
         <div class="bg-top-mid-foot">
-           <div id="top-foot" class="container d-flex justify-content-between align-items-center m-5 border">
+           <div id="top-foot" class="container d-flex justify-content-between align-items-center p-4">
                 <div class="form-group d-flex align-items-center border p-4">
-                    <input type="email" v-model="email" class="form-control my-custom-width my-radius mr-2" placeholder="Subscribe to our newsletter">
-                    <button @click="subscribe" class="btn btn-primary my-radius">Subscribe</button>
+                    <input type="email" class="form-control my-custom-width my-radius mr-2" placeholder="Subscribe to our newsletter">
+                    <button class="btn btn-primary my-radius">Subscribe</button>
                 </div>
                 <p class="mb-0 p-4">
                     <a href="#">Insights is Picwik</a>
@@ -16,16 +16,20 @@
             </div>
 
         <!-- contact us section -->
-            <div id="mid-foot" class="container d-flex justify-content-between align-content-center m-5">
+
+            <div id="mid-foot" class="container d-flex align-content-center justify-content-between justify-content-center pb-5">
                 <ul v-for="list in footerExplore" :key="list.id"> 
                     <h3>{{ list.title }} </h3>
                     <li v-for="item in list.items" :key="item.id">{{ item.content }}</li>
                 </ul>
-            </div>     
+            </div>
+            
+            
         </div>
         
 
         <!-- copyright section -->
+
         <div class="bg-bottom-foot">
             <div id="bottom-foot" class="container d-flex justify-content-between align-items-center">
                 <p>Copyright 2020 tophive. All rights Reserved</p>
