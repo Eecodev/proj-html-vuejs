@@ -5,16 +5,17 @@
 
             <div class="d-flex justify-content-center align-items-center">
                 <div v-for="card in cardPartner" :key="card.id" class="card text-center m-2" style="width: 18rem;">
-                    <div class="card-body">
+                    <div class="card-body p-5">
                         <img class="card-img" :src="card.img" :alt="card.title">
-                        <h5 class="card-title mb-2">{{ card.title }}</h5>
-                        <p class="card-text mb-2">{{ card.text }}</p>
+                        <h5 class="card-title mb-3">{{ card.title }}</h5>
+                        <p class="card-text">{{ card.text }}</p>
                     </div>
                 </div>
             </div>
 
             <div class="d-flex justify-content-center mt-4">
-                <div class="d-flex align-items-center m-4" v-for="statistic in statistics" :key="statistic.id" :style="{ backgroundImage: 'ulr(' + statistic.img +')'}">
+                <div class="d-flex align-items-center statistics" v-for="statistic in statistics" :key="statistic.id" 
+                :style="{ backgroundImage: 'url(' + statistic.img +')'}">
                     <h2>{{ statistic.value }}</h2>
                     <p>{{ statistic.label }}</p>
                 </div>
@@ -82,6 +83,6 @@
     }
     .card-img{
         width: 60px;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
 </style>
