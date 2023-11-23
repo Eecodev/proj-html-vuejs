@@ -17,7 +17,7 @@
                 <div class="d-flex align-items-center statistics m-5" v-for="statistic in statistics" :key="statistic.id" 
                 :style="{ backgroundImage: 'url(' + statistic.img +')'}">
                     <h2 class="mx-2">{{ statistic.value }}</h2>
-                    <p class="">{{ statistic.label }}</p>
+                    <p class="vertical-align">{{ statistic.label }}</p>
                 </div>
             </div>
             
@@ -77,6 +77,18 @@
     h3{
         text-align: center;
         padding-bottom: 40px;
+    }
+    .statistics {
+    position: relative;
+    background-size: cover;
+    }
+
+  .background-image {
+    position: absolute;
+    opacity: 0.5; 
+    }
+    .statistics h2, .vertical-align {
+        margin: 0; 
     }
     .red-text{
         color: $bg-red;
