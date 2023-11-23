@@ -3,6 +3,7 @@
         <PartnerComp/>
         <CourseComp/>
         <EventComp/>
+        <BlogComp/>
     </main>
 </template>
 
@@ -10,12 +11,14 @@
 import PartnerComp from './PartnerComp.vue';
 import CourseComp from './CourseComp.vue';
 import EventComp from './EventComp.vue';
+import BlogComp from './BlogComp.vue';
     export default {
         name: 'MainComp',
         components:{
             PartnerComp,
             CourseComp,
             EventComp,
+            BlogComp
         }
     }
 </script>

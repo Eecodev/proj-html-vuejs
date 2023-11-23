@@ -4,9 +4,9 @@
         <!-- subscribe section -->
         <div class="bg-top-mid-foot">
            <div id="top-foot" class="container d-flex justify-content-center align-items-center p-4">
-                <div class="form-group d-flex align-items-center border md-4">
+                <div class="form-group d-flex align-items-center md-4">
                     <input type="email" class="form-control my-custom-width my-radius mr-2" placeholder="Subscribe to our newsletter">
-                    <button class="btn btn-primary my-radius">Subscribe</button>
+                    <button class="btn btn-primary my-radius red-btn">Subscribe</button>
                 </div>
                 <p class="mb-0 p-4">
                     <a href="#" class="red-text">Insights is Picwik</a>
@@ -146,6 +146,10 @@
     }
     .red-text{
         color: $bg-red;
+    }
+    .red-btn{
+        background-color: $bg-red;
+        border: 1px solid $bg-red;
     }
     .bg-bottom-foot{
         background-color: $bg-copyright;

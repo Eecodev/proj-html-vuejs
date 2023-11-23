@@ -23,7 +23,7 @@ import FooterComp from './components/FooterComp.vue'
       HeaderComp,
       HeroComp,
       MainComp,
-      FooterComp
+      FooterComp,
     },
     data(){
       return {

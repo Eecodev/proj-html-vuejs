@@ -16,7 +16,7 @@
             <div class="d-flex justify-content-center m-5">
                 <div class="d-flex align-items-center statistics m-5" v-for="statistic in statistics" :key="statistic.id" 
                 :style="{ backgroundImage: 'url(' + statistic.img +')'}">
-                    <h2 class="m">{{ statistic.value }}</h2>
+                    <h2 class="mx-2">{{ statistic.value }}</h2>
                     <p class="">{{ statistic.label }}</p>
                 </div>
             </div>

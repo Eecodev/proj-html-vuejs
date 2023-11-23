@@ -4,19 +4,21 @@
 
                <div class="quote-container">
                     <img class="quote-img" src="/public/img/quote.png" alt="quote">
-                    <h4 class="quote-text">
-                        "Academics was committed to my success from the moment I attended an Open House. With the support of caring <span class="red-text">advisors, professors, and staff</span> i was able to thrive in courses, gain recognition through scholarships, and finish with confidence in my <span class="red-text">@academics</span> abilities."</h4>
+                    <h3 class="quote-text">
+                        "Academics was committed to my success from the moment I attended an Open House. With the support of caring <span class="red-text">advisors, professors, and staff</span> i was able to thrive in courses, gain recognition through scholarships, and finish with confidence in my <span class="red-text">@academics</span> abilities."</h3>
                 </div> 
             
                 <div class="content-container d-flex mt-5">
                     <img class="video-img" src="/public/img/video-bg-3.jpg" alt="">
                     <div class="events-container">
-                        <h3 class="text-center">Upcoming Events</h3>
-                        <h5>Princeton offers admision information sessions an student-led tours to campus visitors</h5>
-                        <p><small>Learn more</small></p>
-                        <h5>Admission information sessions and student-led tours to campus visitors</h5>
-                        <p><small>Learn more</small></p>
-                        <p class="text-center"><small>Event Locations</small></p>
+                        <div class="border">
+                          <h3 class="text-center">Upcoming Events</h3>  
+                        </div>
+                        <h5 class="mt-5">Princeton offers admision information sessions an student-led tours to campus visitors</h5>
+                        <p class="m-2"><small>Learn more</small></p>
+                        <h5 class="m-2">Admission information sessions and student-led tours to campus visitors</h5>
+                        <p class="m-2"><small>Learn more</small></p>
+                        <p class="text-center m-2"><small>Event Locations</small></p>
                     </div> 
                 </div>
                 
@@ -80,7 +82,7 @@
         top: 50px;
         right: 100px;
         background-color: $bg-light;
-        padding: 40px 20px 50px 30px;
+        padding: 0 20px 50px 30px;
     }
 
     
