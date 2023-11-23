@@ -3,7 +3,7 @@
   <HeaderComp />
   <HeroComp />
 
-  <MainComp/>
+  <MainComp />
 
   <div class="main-carousel border">
     carousel

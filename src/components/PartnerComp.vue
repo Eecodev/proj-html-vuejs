@@ -3,7 +3,7 @@
         <section id="partnership" class="container m-5">
             <h3>Since 2000, we've been partnering with education leaders to <span class="red-text">increase equity and achievement</span> for all students</h3>
 
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center">
                 <div v-for="card in cardPartner" :key="card.id" class="card text-center m-2" style="width: 18rem;">
                     <div class="card-body p-5">
                         <img class="card-img" :src="card.img" :alt="card.title">
@@ -13,11 +13,11 @@
                 </div>
             </div>
 
-            <div class="d-flex justify-content-center mt-4">
-                <div class="d-flex align-items-center statistics" v-for="statistic in statistics" :key="statistic.id" 
+            <div class="d-flex justify-content-center m-5">
+                <div class="d-flex align-items-center statistics m-5" v-for="statistic in statistics" :key="statistic.id" 
                 :style="{ backgroundImage: 'url(' + statistic.img +')'}">
-                    <h2>{{ statistic.value }}</h2>
-                    <p>{{ statistic.label }}</p>
+                    <h2 class="m">{{ statistic.value }}</h2>
+                    <p class="">{{ statistic.label }}</p>
                 </div>
             </div>
             
