@@ -2,7 +2,6 @@
 
   <HeaderComp />
   <HeroComp />
-
   <MainComp />
 
   <div class="main-carousel border">
