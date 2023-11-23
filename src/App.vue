@@ -1,12 +1,8 @@
 <template>
 
-  <HeaderComp />
-  <HeroComp />
-  <MainComp />
-
-  <div class="main-carousel border">
-    carousel
-  </div>
+  <HeaderComp/>
+  <HeroComp/>
+  <MainComp/>
 
   <FooterComp/>
 
