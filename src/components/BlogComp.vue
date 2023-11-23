@@ -7,7 +7,10 @@
             </div>
             <div class="d-flex justify-content-center mb-5">
                 <div class="card m-2" style="width: 18rem;" v-for="blog in posts" :key="blog.id">
-                    <img :src="blog.img" class="card-img-top" :alt="blog.about">
+                    <div class="zoom-img">
+                       <img :src="blog.img" class="card-img-top" :alt="blog.about"> 
+                    </div>
+                    
                     <div class="card-body">
                         <div class="d-flex">
                             <p class="card-text px-2"><small class="text-body-secondary">{{ blog.admin }}</small></p>
@@ -61,5 +64,14 @@
     .blog-latest{
         text-align: center;
         margin-top: 80px;
+    }
+    .zoom-img{
+        display: inline-block;
+        overflow: hidden;
+        
+    }
+    img:hover{
+        transform: scale(1.5);
+        transition: .5s ease-in-out;
     }
 </style>

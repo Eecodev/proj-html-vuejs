@@ -8,12 +8,15 @@
             
             <div class="d-flex justify-content-center">
                 <div class="card m-2" style="width: 18rem;" v-for="card in courseCard" :key="card.id">
-                    <img :src="card.img" class="card-img-top" :alt="card.about">
+                    <div class="zoom-img">
+                       <img :src="card.img" class="card-img-top" :alt="card.about"> 
+                    </div>
+                    
                     <div class="card-body">
                         <p class="card-text"><small class="text-body-secondary">{{ card.price }}</small></p>
-                        <h5 class="card-title">{{ card.about }}</h5>
-                        <p class="card-text">{{ card.description }}</p>
-                        <p class="card-text"><small class="text-body-secondary"><span class="red-text">{{ card.course_by }}</span></small></p>
+                        <h5 class="card-title pb-2">{{ card.about }}</h5>
+                        <p class="card-text pb-2">{{ card.description }}</p>
+                        <p class="card-text pb-2"><small class="text-body-secondary"><span class="red-text">{{ card.course_by }}</span></small></p>
                     </div>
                 </div>
             </div>
@@ -59,7 +62,17 @@
     .text-center{
         text-align: center;
     }
+
     .red-text{
         color: $bg-red;
+    }
+    .zoom-img{
+        display: inline-block;
+        overflow: hidden;
+        
+    }
+    img:hover{
+        transform: scale(1.5);
+        transition: .5s ease-in-out;
     }
 </style>
