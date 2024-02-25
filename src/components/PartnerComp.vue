@@ -77,6 +77,7 @@
     h3{
         text-align: center;
         padding-bottom: 40px;
+        font-size: 30px;
     }
     .statistics {
     position: relative;

@@ -13,8 +13,8 @@
                     
                     <div class="card-body">
                         <div class="d-flex">
-                            <p class="card-text px-2"><small class="text-body-secondary">{{ blog.admin }}</small></p>
-                            <p class="card-text"><small class="text-body-secondary">{{ blog.edu }}</small></p>  
+                            <p class="card-text"><small class="text-body-secondary">{{ blog.admin }}</small></p>
+                            <p class="card-text px-2"><small class="text-body-secondary">{{ blog.edu }}</small></p>  
                         </div>
                         
                         <h5 class="card-title">{{ blog.about }}</h5>

@@ -1,29 +1,34 @@
 <template>
-    <main>
-        <section id="event" class="container">
-
-               <div class="quote-container">
-                    <img class="quote-img" src="/public/img/quote.png" alt="quote">
-                    <h3 class="quote-text">
-                        "Academics was committed to my success from the moment I attended an Open House. With the support of caring <span class="red-text">advisors, professors, and staff</span> i was able to thrive in courses, gain recognition through scholarships, and finish with confidence in my <span class="red-text">@academics</span> abilities."</h3>
-                </div> 
-            
-                <div class="content-container d-flex mt-5">
-                    <img class="video-img" src="/public/img/video-bg-3.jpg" alt="">
-                    <div class="events-container">
-                        <div class="border">
-                          <h3 class="text-center">Upcoming Events</h3>  
-                        </div>
-                        <h5 class="mt-5">Princeton offers admision information sessions an student-led tours to campus visitors</h5>
-                        <p class="m-2"><small>Learn more</small></p>
-                        <h5 class="m-2">Admission information sessions and student-led tours to campus visitors</h5>
-                        <p class="m-2"><small>Learn more</small></p>
-                        <p class="text-center m-2"><small>Event Locations</small></p>
-                    </div> 
+    <div class="elementor">
+       <div class="twitet">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="quote-text">"Academics was committed to my success from the moment I attended an Open House. With the support of caring <a href="#">advisors, professors, and staff</a> i was able to thrive in courses, gain recognition through scholarships, and finish <strong>with confidence in my</strong> <a href="#">@academics</a> <strong>abilities."</strong></p>
+                    </div>
                 </div>
-                
+            </div>
+        </div> 
+    </div>
+    
+        
+        <section id="event" class="d-flex container">
+            <div class="position-relative d-flex justify-content-center align-items-center flex-grow-1">
+                <div class="content-container mt-5">
+                    <img class="video-img" src="/public/img/video-bg-3.jpg" alt="">
+                </div>
+                <div class="events-container">
+                    <div class="border">
+                        <h3 class="text-center">Upcoming Events</h3>  
+                    </div>
+                    <h5 class="mt-5 ms-2">Princeton offers admision information sessions an student-led tours to campus visitors</h5>
+                    <p class="m-2"><small>Learn more</small></p>
+                    <h5 class="mt-4 m-2">Admission information sessions and student-led tours to campus visitors</h5>
+                    <p class="m-2"><small>Learn more</small></p>
+                    <p class="text-center mt-5"><small>Event Locations</small></p>
+                </div>
+            </div>    
         </section>
-    </main>
 </template>
 
 <script>
@@ -39,50 +44,61 @@
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
-
-    .red-text{
-        color: $bg-red;
+    .twitet {
+        color: #192836;
+        font-size: 30px;
+        text-align: center;
     }
-    .quote-container {
+    .twitet p {
+        margin-bottom: 30px;
         position: relative;
-        text-align: center;
-        padding-top: 40px;
-
+        z-index: 1;
+        margin-top: 60px;
+        overflow: hidden;
     }
 
-    .quote-img {
-        width: 160px;
-        display: block;
-        margin: 0 auto; 
+    .twitet a{
+        font-size: 30px;
+        color: #d74d52;
+        font-weight: 700;
+        position: relative;
+        display: inline-block;
+        word-break: break-all;
+        text-decoration: none;
+    }
+    a, a:after, a:before {
+        color: #192836;
+        transition: all 0.4s ease-in-out;
     }
 
-    .quote-text {
+    .twitet p a:after {
+        content: "";
+        background: #d74d52;
+        height: 1px;
+        width: 100%;
+        right: 0;
+        bottom: 0;
         position: absolute;
-        padding: inherit;
-        top: 50%; 
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        max-width: 80%;
-        font-size: 18px; 
-        line-height: 1.5; 
+        margin-left: 5px;
+        transition: all 0.4s ease-in-out;
     }
-
-    .content-container{
+    .position-relative{
         position: relative;
     }
     .video-img{
-        width: 500px;
+        max-width: 100%;
+        height: auto;
         display: block;
         margin: 0 auto;
     }
     .events-container{
-        width: 500px;
+        max-width: 100%; 
+        height: auto;
         position: absolute;
-        top: 50px;
-        right: 100px;
+        bottom: -50px; /* Posiziona l'events-container leggermente al di sotto del contenitore padre */
+        right: 10%; /* Margine destro relativo */
         background-color: $bg-light;
-        padding: 0 20px 50px 30px;
+        padding: 0 20px 0px 30px;
     }
 
     

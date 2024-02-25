@@ -43,8 +43,4 @@
         overflow: hidden;
         
     }
-    img:hover{
-        transform: scale(1.5);
-        transition: .5s ease-in-out;
-    }
 </style>

@@ -3,9 +3,8 @@
   <HeaderComp/>
   <HeroComp/>
   <MainComp/>
-
   <FooterComp/>
-
+  
 </template>
 
 <script>
