@@ -1,7 +1,7 @@
 <template>
     <div id="hero">
-        <div class="hero-content">
-            <h1>Professional Development For Coaches And Leaders</h1>
+        <div class="container hero-content">
+            <h1>Professional Development <br>For Coaches And Leaders</h1>
             <a href="#" class="btn">Learn More</a>
         </div> 
     </div>
@@ -28,11 +28,13 @@
         align-items: center;
     }
     .hero-content{
-        max-width: 600px;
+        max-width: 100%;
         margin: 0 auto;
     }
     .hero-content h1{
-        font-size: 3rem;
+        font-weight: 10;
+        font-size: 2.5rem;
+        line-height: 1.5em;
         margin-bottom: 20px;
         color: $bg-lightblack;
     }

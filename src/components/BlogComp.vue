@@ -1,6 +1,6 @@
 <template>
     <main>
-        <section id="blog" class="container">
+        <section id="blog">
             <div class="blog-latest">
                 <h3 class="pb-3">Latest From Our Blogs</h3>
                 <p class="pb-4">Whether you're considering a foundation course or an undergraduate degree master's or a PhD, academics is a place where students thrive</p>

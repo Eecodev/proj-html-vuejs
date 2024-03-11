@@ -3,7 +3,7 @@
         <section id="course" class="container mt-3">
             <div class="text-center">
                 <h3 class="mb-4">Recent Courses</h3>
-                <p class="mb-5">Whether you're considering a foundation course or an undergraduate degree master's or PhD, academics is a place where students thrive.</p>  
+                <p class="mb-5">Whether you're considering a foundation course or an undergraduate degree master's <br> or PhD, academics is a place where students thrive.</p>  
             </div>
             
             <div class="d-flex justify-content-center">

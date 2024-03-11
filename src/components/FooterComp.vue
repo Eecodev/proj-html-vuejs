@@ -3,21 +3,23 @@
     <footer>
         <!-- subscribe section -->
         <div class="bg-top-mid-foot">
-           <div id="top-foot" class="container d-flex justify-content-center align-items-center p-4">
+           <div id="top-foot" class="container d-flex justify-content-center align-items-center p-4 border flex-wrap">
                 <div class="form-group d-flex align-items-center md-4">
                     <input type="email" class="form-control my-custom-width my-radius mr-2" placeholder="Subscribe to our newsletter">
                     <button class="btn btn-primary my-radius red-btn">Subscribe</button>
                 </div>
-                <p class="mb-0 p-4">
-                    <a href="#" class="red-text">Insights is Picwik</a>
-                    University's thought leadership publication for sharing knowledge on management, technology, and innovation.
-                    <span class="d-block"><a href="#">Take me there</a></span>
-                </p>
+                <div>
+                   <p class="mb-0 p-4">
+                        <a href="#" class="red-text">Insights is Picwik</a>
+                            University's thought leadership publication for sharing knowledge on management, technology, and innovation.
+                        <span class="d-block"><a href="#">Take me there</a></span>
+                    </p> 
+                </div>
             </div>
 
         <!-- contact us section -->
 
-            <div id="mid-foot" class="container d-flex align-content-center justify-content-between justify-content-center pb-5">
+            <div id="mid-foot" class="container d-flex align-items-center justify-content-between pt-5 pb-5">
                 <ul v-for="list in footerExplore" :key="list.id"> 
                     <h3>{{ list.title }} </h3>
                     <li v-for="item in list.items" :key="item.id">{{ item.content }}</li>
@@ -142,6 +144,7 @@
         color: $bg-light;
     }
     .bg-top-mid-foot{
+        height: 500px;
         background-color: $bg-footer;
     }
     .red-text{
