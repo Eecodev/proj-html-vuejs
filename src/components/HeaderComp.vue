@@ -18,9 +18,7 @@
                                     <li class="menu-item"><a href="#" v-for="navLink in navMenu" :key="navLink.id">{{ navLink.link }}</a></li>
                                 </ul>
                             </div>
-                            <!-- <button class="burger-menu">
-                                <i class="fa-solid fa-bars"></i>
-                            </button> -->
+                           
                             <div class="sign-up-in-container">
                                 <div class="sign-in-btn">
                                     <span class="sign-in">Sign-In</span>
@@ -55,9 +53,10 @@
                     {
                         link: 'News'
                     },
-                ]
+                ],
+                isMenuOpen: false
             }
-        }
+        },
     }
 </script>
 
@@ -175,19 +174,4 @@
         color:$bg-light;
         transition-duration: 0.5s;
     }
-    // .burger-menu{
-    //     border: unset;
-    //     background-color: unset; 
-    // }
-    // .burger-menu i{
-    //     font-size: 35px;
-    //     color: #34495e;
-    // }
-    // @media screen and (max-width: 666px){
-    //     .menu-header-menu-container .menu{
-    //         display: none;
-    //     }
-    // }
-    
-
 </style>

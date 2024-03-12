@@ -1,7 +1,7 @@
 <template>
     <main>
         <section id="partnership" class="m-3 m-md-5">
-            <div class="container title-partner-container">
+            <div class="container">
                <h2>Since 2000, we've been partnering with education leaders to <br><span class="red-text">increase equity and achievement</span> for all students</h2> 
             </div>
             
@@ -21,7 +21,7 @@
             </div>
 
             <div class="container mt-5">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center mb-5">
                     <div class="col-sm-6 col-md-4 col-lg-3 mb-3 align-items-center ">
                         <div class="statistics d-flex">
                             <h2 class="mx-2">
@@ -77,23 +77,6 @@
                         text: 'Lorem ipsum is simply dummy text of the print ing and typesetting has been the industrys'
                     },
                 ],
-                // statistics: [
-                //     {
-                //         id: 1,
-                //         value: '6500',
-                //         label: 'Students',
-                //     },
-                //     {
-                //         id: 2,
-                //         value: '200',
-                //         label: 'Online Courses',
-                //     },
-                //     {
-                //         id: 3,
-                //         value: '100%',
-                //         label: 'Happy Clients',
-                //     }
-                // ]
             }
         }
     }
@@ -105,9 +88,6 @@
 
     #partnership{
         text-align: center;
-    }
-    .title-partner-container{
-        margin: 70px 0;
     }
     h2{
         text-align: center;
@@ -128,9 +108,6 @@
     .statistics {
         position: relative;
         background-size: cover;
-    }
-    .statistics h2, .vertical-align {
-        margin: 0; 
     }
     .statistics h2{
         font-size: 40px;
@@ -162,13 +139,13 @@
 
     @media screen and (max-width: 575px){
         .statistics{
-            flex-direction: column;
             justify-content: center;
+            padding: 0;
         }
         .statistics img{
             position: absolute;
-            left: 35%;
-            right: 65%;
+            left: 40%;
+            right: 70%;
         }
     }
 </style>

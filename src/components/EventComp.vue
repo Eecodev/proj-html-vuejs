@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <p class="quote-text">"Academics was committed to my success from the moment I attended an Open House. With the support of caring <a href="#">advisors, professors, and staff</a> i was able to thrive in courses, gain recognition through scholarships, and finish <strong>with confidence in my</strong> <a href="#">@academics</a> <strong>abilities."</strong></p>
+                        <p class="quote-text">"Academics was committed to my success from the moment I attended an Open <br> House. With the support of caring <a href="#">advisors, professors, and staff</a> i was able to <br>thrive in courses, gain recognition through scholarships, and finish <strong>with <br>confidence in my</strong> <a href="#">@academics</a> <strong>abilities."</strong></p>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                     <div class="border">
                         <h3 class="text-center">Upcoming Events</h3>  
                     </div>
-                    <h5 class="mt-5 ms-2">Princeton offers admision information sessions an student-led tours to campus visitors</h5>
+                    <h5 class="mt-5 ms-2">Princeton offers admission information sessions an student-led tours to campus visitors</h5>
                     <p class="m-2"><small>Learn more</small></p>
                     <h5 class="mt-4 m-2">Admission information sessions and student-led tours to campus visitors</h5>
                     <p class="m-2"><small>Learn more</small></p>
@@ -95,8 +95,8 @@
         max-width: 100%; 
         height: auto;
         position: absolute;
-        bottom: -50px; /* Posiziona l'events-container leggermente al di sotto del contenitore padre */
-        right: 10%; /* Margine destro relativo */
+        bottom: -50px; 
+        right: 10%; 
         background-color: $bg-light;
         padding: 0 20px 0px 30px;
     }

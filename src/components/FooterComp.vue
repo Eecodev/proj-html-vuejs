@@ -3,9 +3,9 @@
     <footer>
         <!-- subscribe section -->
         <div class="bg-top-mid-foot">
-           <div id="top-foot" class="container d-flex justify-content-center align-items-center p-4 border flex-wrap">
-                <div class="form-group d-flex align-items-center md-4">
-                    <input type="email" class="form-control my-custom-width my-radius mr-2" placeholder="Subscribe to our newsletter">
+           <div id="top-foot" class="container align-items-center p-4 border flex-wrap">
+                <div class="form-group d-flex align-items-center px-4">
+                    <input type="email" class="form-control my-custom-width my-radius" placeholder="Subscribe to our newsletter">
                     <button class="btn btn-primary my-radius red-btn">Subscribe</button>
                 </div>
                 <div>
@@ -19,14 +19,16 @@
 
         <!-- contact us section -->
 
-            <div id="mid-foot" class="container d-flex align-items-center justify-content-between pt-5 pb-5">
-                <ul v-for="list in footerExplore" :key="list.id"> 
-                    <h3>{{ list.title }} </h3>
-                    <li v-for="item in list.items" :key="item.id">{{ item.content }}</li>
-                </ul>
+            <div id="mid-foot" class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col d-flex justify-content-between flex-wrap">
+                        <ul v-for="list in footerExplore" :key="list.id"> 
+                            <h3>{{ list.title }} </h3>
+                            <li v-for="item in list.items" :key="item.id">{{ item.content }}</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            
-            
         </div>
         
 
@@ -35,7 +37,7 @@
         <div class="bg-bottom-foot">
             <div id="bottom-foot" class="container d-flex justify-content-between align-items-center">
                 <p>Copyright 2020 tophive. All rights Reserved</p>
-                <ul class="d-flex">
+                <ul class="d-flex flex-wrap">
                     <li class="m-2" v-for="copyright in copyRights" :key="copyright.id">{{ copyright }}</li>
                 </ul>
             </div>
@@ -144,7 +146,6 @@
         color: $bg-light;
     }
     .bg-top-mid-foot{
-        height: 500px;
         background-color: $bg-footer;
     }
     .red-text{

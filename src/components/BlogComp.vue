@@ -1,27 +1,45 @@
 <template>
     <main>
         <section id="blog">
-            <div class="blog-latest">
+            <div class=" container blog-latest">
                 <h3 class="pb-3">Latest From Our Blogs</h3>
-                <p class="pb-4">Whether you're considering a foundation course or an undergraduate degree master's or a PhD, academics is a place where students thrive</p>
+                <p class="pb-4">Whether you're considering a foundation course or an undergraduate degree master's <br> or a PhD, academics is a place where students thrive</p>
             </div>
-            <div class="d-flex justify-content-center mb-5">
-                <div class="card m-2" style="width: 18rem;" v-for="blog in posts" :key="blog.id">
-                    <div class="zoom-img">
-                       <img :src="blog.img" class="card-img-top" :alt="blog.about"> 
-                    </div>
-                    
-                    <div class="card-body">
-                        <div class="d-flex">
-                            <p class="card-text"><small class="text-body-secondary">{{ blog.admin }}</small></p>
-                            <p class="card-text px-2"><small class="text-body-secondary">{{ blog.edu }}</small></p>  
+
+            <div class="container">
+                <div class="row d-flex justify-content-center mb-5">
+                   <div class="card m-2 p-0" style="width: 18rem;" v-for="blog in posts" :key="blog.id">
+                        <div class="col">
+                           <div class="card-body p-0">
+                                <img :src="blog.img" class="card-img-top" :alt="blog.about">  
+                                <div class="d-flex px-2 pt-2">
+                                    <p class="card-text"><small class="text-body-secondary">{{ blog.admin }}</small></p>
+                                    <p class="card-text px-2"><small class="text-body-secondary">{{ blog.edu }}</small></p>  
+                                </div>
+                                
+                                <h5 class="card-title px-2">{{ blog.about }}</h5>
+                                <p class="card-text px-2"><small class="text-body-secondary"><span>{{ blog.read }}</span></small></p>
+                            </div> 
                         </div>
-                        
-                        <h5 class="card-title">{{ blog.about }}</h5>
-                        <p class="card-text"><small class="text-body-secondary"><span>{{ blog.read }}</span></small></p>
-                    </div>
+                    </div> 
                 </div>
             </div>
+
+            <!-- <div class="container">
+                <div class="row justify-content-center">
+                   <div class="card m-2 p-0" style="width: 18rem;" v-for="card in courseCard" :key="card.id">
+                        <div class="col">
+                            <div class="card-body p-0">
+                                <img :src="card.img" class="card-img-top" :alt="card.about"> 
+                                <p class="card-text p-2"><small class="text-body-secondary">{{ card.price }}</small></p>
+                                <h5 class="card-title p-2">{{ card.about }}</h5>
+                                <p class="card-text p-2">{{ card.description }}</p>
+                                <p class="card-text p-2"><small class="text-body-secondary"><span class="red-text">{{ card.course_by }}</span></small></p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div> -->
         </section>
     </main>
 </template>
@@ -65,13 +83,7 @@
         text-align: center;
         margin-top: 80px;
     }
-    .zoom-img{
-        display: inline-block;
-        overflow: hidden;
-        
-    }
-    img:hover{
-        transform: scale(1.5);
-        transition: .5s ease-in-out;
+    h5{
+        font-size: 20px;
     }
 </style>
