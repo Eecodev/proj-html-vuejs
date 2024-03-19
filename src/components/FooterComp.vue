@@ -3,18 +3,21 @@
     <footer>
         <!-- subscribe section -->
         <div class="bg-top-mid-foot">
-           <div id="top-foot" class="container align-items-center p-4 border flex-wrap">
-                <div class="form-group d-flex align-items-center px-4">
-                    <input type="email" class="form-control my-custom-width my-radius" placeholder="Subscribe to our newsletter">
-                    <button class="btn btn-primary my-radius red-btn">Subscribe</button>
+           <div id="top-foot" class="container">
+                <div class="align-items-center p-4">
+                   <div class="form-group d-flex align-items-center px-4">
+                        <input type="email" class="form-control my-radius" placeholder="Subscribe to our newsletter">
+                        <button class="btn btn-primary my-radius red-btn">Subscribe</button>
+                    </div>
+                    <div>
+                        <p class="mb-0 p-4">
+                            <a href="#" class="red-text">Insights is Picwik</a>
+                                University's thought leadership publication for sharing knowledge <br> on management, technology, and innovation.
+                            <span class="d-block"><a href="#">Take me there</a></span>
+                        </p> 
+                    </div> 
                 </div>
-                <div>
-                   <p class="mb-0 p-4">
-                        <a href="#" class="red-text">Insights is Picwik</a>
-                            University's thought leadership publication for sharing knowledge on management, technology, and innovation.
-                        <span class="d-block"><a href="#">Take me there</a></span>
-                    </p> 
-                </div>
+                
             </div>
 
         <!-- contact us section -->
