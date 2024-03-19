@@ -81,7 +81,7 @@
 <style lang="scss" scoped>
     .blog-latest{
         text-align: center;
-        margin-top: 80px;
+        margin-top: 150px;
     }
     h5{
         font-size: 20px;
