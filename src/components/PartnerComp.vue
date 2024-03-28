@@ -8,12 +8,12 @@
 
             <div class="container">
                 <div class="row justify-content-center">
-                    <div v-for="card in cardPartner" :key="card.id" class="col-xs-2 col-sm-6 col-md-4 col-lg-3 mb-3">
+                    <div v-for="card in cardPartner" :key="card.id" class="col-xs-2 col-sm-6 col-md-4 col-lg-3 p-3 my-card">
                         <div class="card text-center border-shadow">
-                            <div class="card-body p-4">
+                            <div class="card-body py-5">
                                 <img class="card-img" :src="card.img" :alt="card.title">
-                                <h5 class="card-title mt-3 mb-2">{{ card.title }}</h5>
-                                <p class="card-text">{{ card.text }}</p>
+                                <h5 class="card-title mt-3 mb-4">{{ card.title }}</h5>
+                                <p class="card-text lh-lg">{{ card.text }}</p>
                             </div>
                         </div>
                     </div> 
@@ -22,32 +22,32 @@
 
             <div class="container mt-5">
                 <div class="row justify-content-center mb-5">
-                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3 align-items-center ">
-                        <div class="statistics d-flex">
-                            <h2 class="mx-2">
-                                <span class="stat-orange">6500 +</span>
-                                <strong>Students</strong>
+                    <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
+                        <div class="statistics">
+                            <h2 class="d-flex justify-content-start align-items-center">
+                                <span class="stat-orange fw-bold">6500<span class="px-2">+</span></span>
+                                <span class="fs-6">Students</span>
                             </h2>
-                            <img src="/public/img/counter-shape-1-1-1.png" alt="">
                         </div>
+                        <!-- <img src="/public/img/counter-shape-1-1-1.png" alt=""> -->
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                        <div class="statistics d-flex">
-                            <h2 class="mx-2">
-                                <span class="stat-red">200 +</span>
-                                <strong>Online Courses</strong>
+                        <div class="statistics">
+                            <h2 class="d-flex justify-content-center align-items-center">
+                                <span class="stat-red fw-bold">200<span class="px-2">+</span></span>
+                                <span class="fs-6">Online Courses</span>
                             </h2>
-                            <img src="/public/img/counter-shape-2-1-1.png" alt="">
                         </div>
+                        <!-- <img src="/public/img/counter-shape-2-1-1.png" alt=""> -->
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-                        <div class="statistics d-flex">
-                            <h2 class="mx-2">
-                                <span class="stat-green">100%</span>
-                                <strong>Happy Clients</strong>
+                        <div class="statistics">
+                            <h2 class="d-flex justify-content-end align-items-center">
+                                <span class="stat-green fw-bold">100<span class="px-2">%</span></span>
+                                <span class="fs-6">Happy Clients</span>
                             </h2>
-                            <img src="/public/img/counter-shape-3-1-1.png" alt="">
                         </div>
+                        <!-- <img src="/public/img/counter-shape-3-1-1.png" alt=""> -->
                     </div>
                 </div>
             </div>
@@ -98,6 +98,9 @@
     .red-text{
         color: $bg-red;
     }
+    .my-card{
+        width: 400px;
+    }
     .border-shadow{
         box-shadow: 0px 28px 65px 0px rgba(188, 188, 188, 0.25);
     }
@@ -137,6 +140,9 @@
         color: #72df7c;
     }
 
+    @media screen and (max-width: 767px){
+
+    }
     @media screen and (max-width: 575px){
         .statistics{
             justify-content: center;

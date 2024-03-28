@@ -1,6 +1,6 @@
 <template>
     <section class="d-flex align-items-center justify-content-center mt-5">
-        <div class="container d-flex align-items-center justify-content-center">
+        <div class="container d-flex align-items-center justify-content-center pt-5">
                <div class="left">
                     <img src="/public/img/video-bg-3.jpg" alt="">
                 </div>
@@ -73,7 +73,7 @@
             width: 100%;
         }
         .left{
-            height: 400px;
+            height: 550px;
         }
         .left img{
             height: 80%;
