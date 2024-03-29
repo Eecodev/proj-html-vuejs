@@ -14,8 +14,8 @@
                                 <img :src="blog.img" class="card-img-top" :alt="blog.about">  
                                 <div class="p-2">
                                     <div class="d-flex px-2 pt-2">
-                                        <p class="card-text"><small class="text-body-secondary">{{ blog.admin }}</small></p>
-                                        <p class="card-text px-2"><small class="text-body-secondary">{{ blog.edu }}</small></p>  
+                                        <p class="card-text f-admin"><i class="fa-regular fa-user"></i><small class="text-body-secondary">{{ blog.admin }}</small></p>
+                                        <p class="card-text px-4 f-admin"><i class="fa-regular fa-folder"></i><small class="text-body-secondary">{{ blog.edu }}</small></p>  
                                     </div>
                                 
                                     <p class="card-title px-2 lh-lg fs-5"><strong>{{ blog.about }}</strong></p>
@@ -66,6 +66,7 @@
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
     .border-shadow{
         box-shadow: 0px 28px 65px 0px rgba(188, 188, 188, 0.25);
     }
@@ -76,4 +77,12 @@
     h5{
         font-size: 20px;
     }
+    .f-admin:hover{
+        color: $bg-red;
+    }
+    // icons
+    .fa-user, .fa-folder{
+        padding-right: 15px;
+    }
+
 </style>

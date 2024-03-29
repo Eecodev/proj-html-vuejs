@@ -28,8 +28,9 @@
                                 <span class="stat-orange fw-bold">6500<span class="px-2">+</span></span>
                                 <span class="fs-6">Students</span>
                             </h2>
+                            <img class="stat-1" src="/public/img/counter-shape-1-1-1.png" alt="">
                         </div>
-                        <!-- <img src="/public/img/counter-shape-1-1-1.png" alt=""> -->
+                        
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                         <div class="statistics">
@@ -37,8 +38,9 @@
                                 <span class="stat-red fw-bold">200<span class="px-2">+</span></span>
                                 <span class="fs-6">Online Courses</span>
                             </h2>
+                            <img class="stat-2" src="/public/img/counter-shape-2-1-1.png" alt="">
                         </div>
-                        <!-- <img src="/public/img/counter-shape-2-1-1.png" alt=""> -->
+                        
                     </div>
                     <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
                         <div class="statistics">
@@ -46,8 +48,9 @@
                                 <span class="stat-green fw-bold">100<span class="px-2">%</span></span>
                                 <span class="fs-6">Happy Clients</span>
                             </h2>
+                            <img class="stat-3" src="/public/img/counter-shape-3-1-1.png" alt="">
                         </div>
-                        <!-- <img src="/public/img/counter-shape-3-1-1.png" alt=""> -->
+                        
                     </div>
                 </div>
             </div>
@@ -148,9 +151,19 @@
             justify-content: center;
             padding: 0;
         }
-        .statistics img{
+        .statistics .stat-3{
             position: absolute;
-            left: 40%;
+            left: 45%;
+            right: 60%;
+        }
+        .statistics .stat-2{
+            position: absolute;
+            left: 25%;
+            right: 70%;
+        }
+        .statistics .stat-1{
+            position: absolute;
+            left: 5%;
             right: 70%;
         }
     }

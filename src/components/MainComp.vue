@@ -13,7 +13,6 @@ import PartnerComp from './PartnerComp.vue';
 import CourseComp from './CourseComp.vue';
 import EventComp from './EventComp.vue';
 import BlogComp from './BlogComp.vue';
-import CarouselComp from './CarouselComp.vue';
     export default {
         name: 'MainComp',
         components:{
@@ -21,7 +20,6 @@ import CarouselComp from './CarouselComp.vue';
             CourseComp,
             EventComp,
             BlogComp,
-            CarouselComp
         }
     }
 </script>

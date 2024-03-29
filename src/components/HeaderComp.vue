@@ -17,18 +17,14 @@
 
                     <!-- Right Side Of Navbar -->
 
+                    
                     <ul class="navbar-nav ms-auto">
                         <li v-for="(item, index) in navMenu" :key="index" class="nav-item">
                             <a class="nav-link" href="#">{{ item.link }}</a>
                         </li>
-                        <!-- <li class="nav-item border mx-2">
-                            <a class="nav-link" href="#">Login</a>
-                        </li>
-                        <li class="nav-item border">
-                            <a class="nav-link" href="#">Register</a>
-                        </li> -->
                     </ul>
                 </div>
+                <!-- <button class="btn btn-danger">Sign-In</button> -->
             </div>
         </nav>
     </header>
@@ -70,8 +66,6 @@
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
 
-
-   
     .header-logo{
         width: 100px;
     }
@@ -80,6 +74,20 @@
         margin: 8px;
     }
     li a:hover{
-        border: $bg-red;
+        padding-bottom: 5px;
+        border-bottom: 2px solid $bg-red;
+    }
+    @media screen and (max-width: 767px){
+        .nav-link{
+            margin-left: 0;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        li a:hover{
+            background-color: $bg-red;
+            color: $bg-light;
+            border: 2px solid;
+            text-decoration: none;
+        }
     }
 </style>

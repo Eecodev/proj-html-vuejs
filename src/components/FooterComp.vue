@@ -5,17 +5,7 @@
         <div class="bg-top-mid-foot">
            <div id="top-foot" class="container">
                 <div class="align-items-center p-4">
-                   <div class="form-group d-flex align-items-center px-4">
-                        <input type="email" class="form-control my-radius" placeholder="Subscribe to our newsletter">
-                        <button class="btn btn-primary my-radius red-btn">Subscribe</button>
-                    </div>
-                    <div>
-                        <p class="mb-0 p-4">
-                            <a href="#" class="red-text">Insights is Picwik</a>
-                                University's thought leadership publication for sharing knowledge <br> on management, technology, and innovation.
-                            <span class="d-block"><a href="#">Take me there</a></span>
-                        </p> 
-                    </div> 
+                   
                 </div>
                 
             </div>
@@ -37,7 +27,7 @@
 
         <!-- copyright section -->
 
-        <div class="bg-bottom-foot">
+        <div class="bg-bottom-foot border-top ">
             <div id="bottom-foot" class="container d-flex justify-content-between align-items-center">
                 <p>Copyright 2020 tophive. All rights Reserved</p>
                 <ul class="d-flex flex-wrap">
@@ -149,7 +139,7 @@
         color: $bg-light;
     }
     .bg-top-mid-foot{
-        background-color: $bg-footer;
+        background: linear-gradient(90deg, rgba(215,77,77,1) 0%, rgba(35,55,75,1) 70%);
     }
     .red-text{
         color: $bg-red;
@@ -159,7 +149,7 @@
         border: 1px solid $bg-red;
     }
     .bg-bottom-foot{
-        background-color: $bg-copyright;
+        background: linear-gradient(90deg, rgba(215,77,77,1) 0%, rgba(35,55,75,1) 70%);
     }
     .my-custom-width{
         width: 250px;
